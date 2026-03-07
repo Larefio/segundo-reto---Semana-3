@@ -4,14 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-commerce - Contacto</title>
+  <title>E-commers - Contacto</title>
 </head>
 
 <body>
 
   <header>
     <nav>
-      <h1>Tienda Muebles</h1>
+
+      <h1 id="inicio">Tienda Muebles</h1>
+
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="Nosotros.html">Nosotros</a></li>
@@ -20,15 +22,14 @@
         <li><a href="Galeria.html">Galeria</a></li>
         <li><a href="Contacto.html">Contacto</a></li>
       </ul>
+
     </nav>
   </header>
 
   <main>
 
     <h2>Contacto</h2>
-
     <form>
-
       <fieldset>
         <legend>Tus Datos</legend>
 
@@ -59,27 +60,26 @@
 
       </fieldset>
 
-
       <fieldset>
-        <legend>País</legend>
 
-        <p>
-          <label for="pais">Selecciona tu país:</label>
-          <select name="pais" id="pais">
-            <option value="">--Seleccionar--</option>
-            <option value="mexico">México</option>
-            <option value="peru">Perú</option>
-            <option value="colombia">Colombia</option>
-            <option value="argentina">Argentina</option>
-            <option value="espana">España</option>
-            <option value="chile">Chile</option>
-          </select>
-        </p>
+        <legend>Pais</legend>
+
+        <select name="pais" id="pais">
+
+          <option value="">--Seleccionar--</option>
+          <option value="mexico">México</option>
+          <option value="peru">Perú</option>
+          <option value="colombia">Colombia</option>
+          <option value="argentina">Argentina</option>
+          <option value="espana">España</option>
+          <option value="chile">Chile</option>
+
+        </select>
 
       </fieldset>
 
-
       <fieldset>
+
         <legend>INFORMACIÓN EXTRA</legend>
 
         <p>
@@ -97,7 +97,8 @@
         </p>
 
         <p>
-          <label for="categoria">Categoría de Interés:</label>
+          <label for="categoria">Categoría de Interés</label>
+          <br>
           <input type="text" id="categoria" name="categoria">
         </p>
 
@@ -110,9 +111,44 @@
     </form>
 
   </main>
-
+<br>
   <footer>
+    <div>
+      <div>
+        <h3>Categorías</h3>
+        <ul>
+          <li><a href="#inicio">Cocina</a></li>
+          <li><a href="#inicio">Oficina</a></li>
+          <li><a href="#inicio">Jardín</a></li>
+          <li><a href="#inicio">Cochera</a></li>
+          <li><a href="#inicio">Dormitorios</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Sobre Nosotros</h3>
+        <ul>
+          <li><a href="#inicio">Nuestra Historia</a></li>
+          <li><a href="#inicio">Misión, Visión y Valores</a></li>
+          <li><a href="#inicio">Carreras</a></li>
+          <li><a href="#inicio">Política de Privacidad</a></li>
+          <li><a href="#inicio">Términos del Servicio</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Soporte</h3>
+        <ul>
+          <li><a href="#inicio">Preguntas Frecuentes</a></li>
+          <li><a href="#inicio">Ayuda en línea</a></li>
+          <li><a href="#inicio">Confianza y Seguridad</a></li>
+        </ul>
+      </div>
+
+    </div>
+
     <p>Todos los derechos Reservados, TiendaMuebles</p>
+
   </footer>
 
 </body>
