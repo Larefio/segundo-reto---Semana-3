@@ -1,3 +1,5 @@
+/* Estilos generales */
+
 body {
   margin: 0;
   padding: 0;
@@ -7,6 +9,8 @@ body {
   font-size: 16px;
   line-height: 2;
 }
+
+/*ENCABEZADO Y NAVEGACION*/
 
 .header {
   text-align: center;
@@ -40,8 +44,8 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; 
-  gap: 10px;      
+  flex-wrap: wrap;
+  gap: 10px;
   margin: 0;
   padding: 0;
 }
@@ -55,10 +59,65 @@ body {
 .navegacion a:hover {
   color: #037bc0;
 }
-
+/*SECCION HERO INDEX*/
 .hero img {
   width: 100%;
   height: 550px;
   object-fit: cover;
   display: block;
+}
+
+/* MAIN SECTION - INDEX*/
+main{
+    padding: 0;
+    margin: 0;
+}
+
+.categorias {
+  padding: 5rem 0;
+}
+
+.contenerdor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.titulo-catego {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+}
+
+.lista-categorias .img-categoria {
+  width: 100%;
+}
+
+.img-categoria {
+  max-width: 100%;
+  display: block;
+  border-style: none;
+}
+
+.a-catego {
+  text-decoration: none;
+  color: #000;
+}
+
+.lista-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.lista-categorias .a-catego {
+  text-align: center;
+  display: block;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.lista-categorias a:hover {
+  background-color: #037bc0;
+  color: #fff;
+  border-bottom-right-radius: 1rem;
 }
