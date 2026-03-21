@@ -27,20 +27,21 @@ body {
 
 .contenedor-nav {
   border-top: 1px solid #ccc;
-  margin: 10px auto;
-  max-width: 1200px;   
-  padding: 0 2rem;    
-  
+  margin: 10px 0;
 }
 
 .navegacion {
-  padding: 1rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
 }
 
 .navegacion ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap; 
+  gap: 10px;      
   margin: 0;
   padding: 0;
 }
@@ -57,5 +58,7 @@ body {
 
 .hero img {
   width: 100%;
+  height: 550px;
+  object-fit: cover;
   display: block;
 }
