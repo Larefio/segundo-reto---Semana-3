@@ -6,8 +6,8 @@ body {
   font-family: "Raleway", sans-serif;
   background-color: #fff;
   color: #000;
-  font-size: 16px;
-  line-height: 2;
+  font-size: 14px;
+  line-height: 1.8;
 }
 
 /*ENCABEZADO Y NAVEGACION*/
@@ -15,14 +15,14 @@ body {
 .header {
   text-align: center;
   background-color: #fff;
-  padding: 20px 0 0 0;
+  padding: 15px 0 0 0;
 }
 
 .header h1 {
   font-family: "Playfair Display", serif;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
 }
 
 .titulo-azul {
@@ -31,13 +31,13 @@ body {
 
 .contenedor-nav {
   border-top: 1px solid #ccc;
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 .navegacion {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.5rem;
 }
 
 .navegacion ul {
@@ -45,7 +45,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   margin: 0;
   padding: 0;
 }
@@ -54,38 +54,49 @@ body {
   text-decoration: none;
   color: #000;
   font-weight: 400;
+  font-size: 0.95rem;
 }
 
 .navegacion a:hover {
   color: #037bc0;
 }
+
 /*SECCION HERO INDEX*/
+
 .hero img {
   width: 100%;
   height: 550px;
   object-fit: cover;
   display: block;
 }
+/* MAIN SECTION - INDEX */
 
-/* MAIN SECTION - INDEX*/
-main{
-    padding: 0;
-    margin: 0;
+main {
+  padding: 0;
+  margin: 0;
 }
 
 .categorias {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
-.contenerdor {
-  max-width: 120rem;
+.contenedor {
+  max-width: 100rem;
   margin: 0 auto;
+  padding: 0 5rem;
 }
 
 .titulo-catego {
   text-align: center;
   font-family: "Playfair Display", serif;
   font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.lista-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 .lista-categorias .img-categoria {
@@ -101,23 +112,20 @@ main{
 .a-catego {
   text-decoration: none;
   color: #000;
-}
-
-.lista-categorias {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }
 
 .lista-categorias .a-catego {
   text-align: center;
   display: block;
-  padding: 2rem;
-  font-size: 2rem;
+  padding: 1.5rem;
+  font-size: 1.6rem;
 }
 
-.lista-categorias a:hover {
+.lista-categorias .categoria:hover .a-catego {
   background-color: #037bc0;
   color: #fff;
   border-bottom-right-radius: 1rem;
 }
+
