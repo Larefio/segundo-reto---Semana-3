@@ -29,141 +29,120 @@
       </div>
     </header>
 
-    <main>
-      <h2>Contacto</h2>
-      <form>
+    <main class="contenido-principal contenedor">
+      <h2 class="titulo-form">Contacto</h2>
+
+      <form class="formulario">
         <fieldset>
           <legend>Tus Datos</legend>
 
-          <p>
-            <label for="nombre">Nombre:</label>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Tu Nombre"
-            />
-          </p>
+          <div class="campo">
+            <label for="nombre">Nombre: </label>
+            <input id="nombre" type="text" placeholder="Tu Nombre" required />
+          </div>
 
-          <p>
+          <div class="campo">
             <label for="asunto">Asunto:</label>
-            <input
-              type="text"
-              id="asunto"
-              name="asunto"
-              placeholder="Tu Asunto"
-            />
-          </p>
+            <input id="asunto" type="text" placeholder="Tu Asunto" required />
+          </div>
 
-          <p>
+          <div class="campo">
             <label for="email">E-mail:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Tu Email"
-            />
-          </p>
+            <input id="email" type="email" placeholder="Tu Email" />
+          </div>
 
-          <p>
-            <label for="telefono">Teléfono:</label>
-            <input
-              type="tel"
-              id="telefono"
-              name="telefono"
-              placeholder="Tu Teléfono"
-            />
-          </p>
+          <div class="campo">
+            <label for="tel">Teléfono:</label>
+            <input id="tel" type="tel" placeholder="Tu Teléfono" />
+          </div>
 
-          <p>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje"></textarea>
-          </p>
+          <div class="campo">
+            <label for="tel">Mensaje:</label>
+            <textarea rows="10" cols="20"></textarea>
+          </div>
         </fieldset>
 
         <fieldset>
-          <legend>Pais</legend>
+          <legend>País</legend>
 
-          <select name="pais" id="pais">
-            <option value="">--Seleccionar--</option>
-            <option value="mexico">México</option>
-            <option value="peru">Perú</option>
-            <option value="colombia">Colombia</option>
-            <option value="argentina">Argentina</option>
-            <option value="espana">España</option>
-            <option value="chile">Chile</option>
-          </select>
+          <div class="campo">
+            <label for="pais">País</label>
+            <select id="pais">
+              <option value="">-- Seleccione --</option>
+              <option value="MX">México</option>
+              <option value="PR">Perú</option>
+              <option value="CO">Colombia</option>
+              <option value="AR">Argentina</option>
+              <option value="ES">España</option>
+              <option value="CL">Chile</option>
+            </select>
+          </div>
         </fieldset>
-
         <fieldset>
-          <legend>INFORMACIÓN EXTRA</legend>
+          <legend>Información Extra</legend>
 
-          <p>
-            <label>
-              <input type="radio" name="tipo_usuario" value="cliente" />
-              Cliente
-            </label>
-          </p>
+          <div class="campo">
+            <label for="cliente">Cliente</label>
+            <input id="cliente" type="radio" name="tipo" value="cliente" />
+          </div>
 
-          <p>
-            <label>
-              <input type="radio" name="tipo_usuario" value="proveedor" />
-              Proveedor
-            </label>
-          </p>
+          <div class="campo">
+            <label for="proveedor">Proveedor</label>
+            <input id="proveedor" type="radio" name="tipo" value="proveedor" />
+          </div>
 
-          <p>
+          <div class="campo">
             <label for="categoria">Categoría de Interés</label>
-            <br />
-            <input type="text" id="categoria" name="categoria" />
-          </p>
+            <input list="categorias" name="categorias" />
+            <datalist id="categorias">
+              <option value="Cocina"></option>
+              <option value="Exterior"></option>
+              <option value="Recamaras"></option>
+              <option value="Oficina"></option>
+              <option value="Televisión"></option>
+            </datalist>
+          </div>
         </fieldset>
 
-        <p>
-          <button type="submit">ENVIAR FORMULARIO</button>
-        </p>
+        <input class="btn" type="submit" value="Enviar Formulario" />
       </form>
     </main>
-    <br />
-<footer class="footer">
-  <div class="footer-grid ancho">
-    
-    <div class="footer-col">
-      <h3>Categorías</h3>
-      <ul>
-        <li><a href="#inicio">Cocina</a></li>
-        <li><a href="#inicio">Oficina</a></li>
-        <li><a href="#inicio">Jardín</a></li>
-        <li><a href="#inicio">Cochera</a></li>
-        <li><a href="#inicio">Dormitorios</a></li>
-      </ul>
-    </div>
 
-    <div class="footer-col">
-      <h3>Sobre Nosotros</h3>
-      <ul>
-        <li><a href="#inicio">Nuestra Historia</a></li>
-        <li><a href="#inicio">Misión, Visión y Valores</a></li>
-        <li><a href="#inicio">Carreras</a></li>
-        <li><a href="#inicio">Política de Privacidad</a></li>
-        <li><a href="#inicio">Términos del Servicio</a></li>
-      </ul>
-    </div>
+    <footer class="footer">
+      <div class="footer-grid ancho">
+        <div class="footer-col">
+          <h3>Categorías</h3>
+          <ul>
+            <li><a href="#inicio">Cocina</a></li>
+            <li><a href="#inicio">Oficina</a></li>
+            <li><a href="#inicio">Jardín</a></li>
+            <li><a href="#inicio">Cochera</a></li>
+            <li><a href="#inicio">Dormitorios</a></li>
+          </ul>
+        </div>
 
-    <div class="footer-col">
-      <h3>Soporte</h3>
-      <ul>
-        <li><a href="#inicio">Preguntas Frecuentes</a></li>
-        <li><a href="#inicio">Ayuda en línea</a></li>
-        <li><a href="#inicio">Confianza y Seguridad</a></li>
-      </ul>
-    </div>
+        <div class="footer-col">
+          <h3>Sobre Nosotros</h3>
+          <ul>
+            <li><a href="#inicio">Nuestra Historia</a></li>
+            <li><a href="#inicio">Misión, Visión y Valores</a></li>
+            <li><a href="#inicio">Carreras</a></li>
+            <li><a href="#inicio">Política de Privacidad</a></li>
+            <li><a href="#inicio">Términos del Servicio</a></li>
+          </ul>
+        </div>
 
-  </div>
+        <div class="footer-col">
+          <h3>Soporte</h3>
+          <ul>
+            <li><a href="#inicio">Preguntas Frecuentes</a></li>
+            <li><a href="#inicio">Ayuda en línea</a></li>
+            <li><a href="#inicio">Confianza y Seguridad</a></li>
+          </ul>
+        </div>
+      </div>
 
-  <p class="footer-copy">
-    Todos los derechos Reservados, TiendaMuebles
-  </p>
-</footer>
+      <p class="footer-copy">Todos los derechos Reservados, TiendaMuebles</p>
+    </footer>
   </body>
 </html>
