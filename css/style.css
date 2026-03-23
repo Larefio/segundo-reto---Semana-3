@@ -325,6 +325,146 @@ main {
   font-family: "Raleway", sans-serif;
 }
 
+/*BLOG*/
+.contenedor1 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 12rem;
+}
+.contenedor-blog {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 4rem;
+}
+
+.article-raya {
+  border-bottom: 2px solid #e1e1e1;
+  margin-bottom: 2rem;
+}
+.article1 h2 {
+  text-align: left;
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  margin: 0 0 2rem 0;
+}
+
+.article1 img {
+  max-width: 100%;
+  display: block;
+}
+
+.descripcion-blog {
+  padding: 2rem 0;
+  max-width: 60rem;
+  margin: 16px 16px;
+}
+
+.entrada-blog {
+  display: flex;
+  justify-content: space-between;
+}
+.entrada-blog p {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.entrada-blog span {
+  color: #037bc0;
+}
+
+.contexto-blog {
+  font-family: "Raleway", sans-serif;
+  display: block;
+}
+.contexto-blog p {
+  margin: 16px 0;
+}
+
+.btn-blog {
+  display: block;
+  width: 100%;
+  max-width: 15rem;
+  background-color: #8cbc00;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease-out;
+}
+
+.btn-blog:hover {
+  background-color: #769c00;
+}
+
+.blog-aside {
+  margin-left: 0;
+  display: block;
+}
+
+.blog-aside h3 {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  margin: 0 0 2rem 0;
+}
+
+.blog-aside a {
+  color: #000;
+  text-decoration: none;
+}
+/*--------------ENTRADA--------------------*/
+
+.contenido-entrada {
+  padding-top: 2rem;
+}
+
+.article-entrada {
+  padding: 50px 0 0;
+}
+
+.article-entrada h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  margin: 0 0 1rem 0;
+}
+
+.contenido-entrada-blog {
+  padding: 0;
+  max-width: 600px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.article-entrada img {
+  width: 100%;
+  display: block;
+}
+
+.entrada-blog {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+.descripcion-blog {
+  padding: 0;
+}
+
+.contexto-blog p {
+  margin-bottom: 2rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.8;
+}
+
+
+
+
+
+
 
 
 
